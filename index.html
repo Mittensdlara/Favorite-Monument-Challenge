@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Favorite Monument Challenge</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --pink: #f85e9f;
+        --purple: #5d50c6;
+      }
+      body {
+        background: linear-gradient(
+          44.8deg,
+          rgba(255, 136, 102, 0.67) -53.1%,
+          rgba(255, 221, 136, 0.28) 49%
+        );
+        background-repeat: no-repeat;
+        font-family: "Inter", sans-serif;
+      }
+      .sign-up {
+        background-color: var(--purple);
+      }
+      .pic1 {
+        z-index: 1;
+      }
+      .pic2 {
+        position: absolute;
+        z-index: 2;
+        right: 300px;
+        top: 200px;
+        bottom: 100px;
+        width: 400px;
+      }
+      .top-destinations {
+        color: var(--pink);
+      }
+      .hero-text {
+        font-weight: 700;
+        font-size: 50px;
+        letter-spacing: 2px;
+        line-height: 4rem;
+      }
+      .desc {
+        color: gray;
+        font-weight: 100;
+        font-size: 20px;
+      }
+      .top-des {
+        color: var(--pink);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        font-size: 18px;
+        list-style: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-lg navbar-light mb-5 mt-5">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"
+            ><img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/416/original/logo.png?1705169258"
+              alt="logo"
+            /><span class="brand-name fw-bold ms-2">Mahta</span></a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto ms-5 mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active fw-bold" aria-current="page" href="#"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">Discover</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold" href="#">About me</a>
+              </li>
+            </ul>
+            <span class="navbar-text">
+              <button class="btn btn-transparent me-2 fw-bold">Log In</button>
+              <button
+                class="btn btn-primary shadow rounded-pill px-4 py-2 fw-bold sign-up"
+              >
+                Sign Up
+              </button>
+            </span>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Start -->
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <h1 class="hero-text">
+              Isfahan <br />
+              Explore
+              <span class="top-destinations"> Timeless Beauty </span> and <br />
+
+              <span class="top-destinations"> Culture! </span>
+            </h1>
+            <p class="mt-5 desc">
+              Discover the enchanting city in central Iran,<br />
+              celebrated for its mesmerizing Persian architecture.
+            </p>
+            <div class="button mt-5 mb-5">
+              <button
+                class="btn sign-up px-4 py-2 rounded-pill text-white shadow-lg m-2"
+              >
+                Get Started
+              </button>
+              <button
+                class="btn btn-transparent m-2 px-4 py-2 fw-bold border border-light rounded-pill"
+              >
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/420/original/play-icon.png?1705169292"
+                  class=""
+                  alt=""
+                />
+                Watch Isfahan
+              </button>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/419/original/travel-hero.png?1705169277"
+              class="img-fluid"
+              alt=""
+            />
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/418/original/Naghsh-e-Jahan-Isfahan-5-1024x462.jpg?1705169272"
+              class="img-fluid rounded-circle pic1"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <!-- Hero End -->
+      <!-- Card Start  -->
+      <div class="container my-5 mx-0">
+        <div class="header">
+          <h3 class="top-des">Top Destination</h3>
+          <h1 class="fw-bold fs-2">Explore top destination</h1>
+        </div>
+        <div class="cards my-5 d-flex justify-content-center text-center">
+          <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <div class="card shadow rounded" style="width: 18rem">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/423/original/isfahan-kentaltravel-ezgif.com-webp-to-png-converter.png?1705169818"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h1 class="fw-bold fs-5 text-center">Si-o-Se-Pol</h1>
+                  <p class="card-text fs-6">
+                    Si-o-Se-Pol, also known as Allahverdi Khan Bridge, is one of
+                    the eleven Isfahan bridges, crossing Zayandehrud River. It
+                    is the most famous bridge of Isfahan due to its size,
+                    central location, and prominent architecture. The bridge is
+                    a center of city nightlife that attracts both Iranians and
+                    foreign tourists.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <div class="card shadow rounded" style="width: 18rem">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/422/original/hasht-behesht-palace-isfahan-iran_261932-12338.png?1705169489"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h1 class="fw-bold fs-5 text-center">Hasht Behesht</h1>
+                  <p class="card-text">
+                    One of the remaining monuments of the Safavid Era is Hasht
+                    Behesht Palace. Its brilliant architecture along with its
+                    design and decoration have made it a legendary palace. It
+                    has four different façades each one visible through a
+                    particular angle. There is also a garden around this
+                    structure from which not much has remained. However, a park
+                    has recently been established near the building with modern
+                    affiliations.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <div class="card shadow rounded" style="width: 18rem">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/421/original/Vank-Cathedral-Isfahan-Iran-Persia-Advisor-Travel-2.jpg?1705169302"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h1 class="fw-bold fs-5 text-center">Vank Cathedral</h1>
+                  <p class="card-text">
+                    The Holy Savior Cathedral or the Church of Saintly Sisters
+                    is widely known as Vank Cathedral. It is an Armenian church,
+                    located in the New Julfa district in the center of Isfahan.
+                    The name “Vank” derives from the Armenian word “monastery”.
+                    Due to its outstanding interior, Vank Cathedral is one of
+                    the most popular tourist destinations in Isfahan.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
+              <div class="card shadow rounded" style="width: 18rem">
+                <img
+                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/110/417/original/istockphoto-1416900230-612x612.jpg?1705169264"
+                  class="card-img-top"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h1 class="fw-bold fs-5 text-center">Khaju Bridge</h1>
+                  <p class="card-text">
+                    Khaju Bridge is one of the most famous bridges in Iran. As
+                    well as being a bridge and weir, this bridge functions as a
+                    building and a place for public meetings. It is decorated
+                    with paintings and tile works. It is a thorough sample of
+                    Persian architecture. After 350 years of being constructed,
+                    the bridge is still working. It functions as a recreation
+                    center aiming at social interactions and cultural exchange.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cards End -->
+      <!-- Footer  -->
+      <hr />
+      <div class="footer text-center m-3 fw-bold">
+        Codded and Developed By
+        <a href="https://instagram.com/mittensdlara" class="top-des"> Del ♥</a>
+        from <a href="https://shecodes.io" class="top-des">SheCodes</a>
+      </div>
+      <!-- end Footer -->
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
